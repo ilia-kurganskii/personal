@@ -10,11 +10,12 @@
     flex-direction: row;
     min-height: 45rem;
     flex-wrap: wrap;
+    width: 100%;
     max-width: var(--max-width-section);
     padding: 2rem 0;
 
 
-    .content-text{
+    .content-text {
       padding: 2rem 0;
       align-self: center;
       max-width: 50%;

@@ -1,7 +1,10 @@
-import "./css/global.css"
+import "./css/global.scss"
+import "./css/icons/style.scss"
+import "./css/icons/variables.scss"
 import "./css/normalize.css"
 import "./css/typography.css"
 import "./css/buttons.scss"
 import "./partials/header/header.scss"
 import "./partials/sections/main/main.scss"
+import "./partials/footer/footer.scss"
 

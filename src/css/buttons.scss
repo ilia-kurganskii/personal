@@ -10,6 +10,7 @@
     border: 0.2rem solid var(--accent-strong);
     background: var(--accent-strong);
     color: var(--base-weak);
+    transition: color 200ms ease-in-out, background 200ms ease-in-out;
 
     &:hover {
       background: transparent;
