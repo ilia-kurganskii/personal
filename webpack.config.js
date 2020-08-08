@@ -2,7 +2,8 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
@@ -21,7 +22,7 @@ module.exports = {
     },
     module: {
         rules: [
-            {test: /\.handlebars$/, loader: "handlebars-loader"},
+            {test: /\.hbs$/, loader: "handlebars-loader"},
             {
                 test: /\.(sa|sc|c)ss$/,
                 use: [
@@ -99,7 +100,7 @@ module.exports = {
 
         new HtmlWebpackPlugin({
             title: 'Ilya Kurganskiy',
-            template: './src/index.handlebars',
+            template: './src/index.hbs',
             minify: !isDevelopment && {
                 html5: true,
                 collapseWhitespace: true,
@@ -107,6 +108,12 @@ module.exports = {
                 removeComments: true,
                 removeEmptyElements: true
             },
-        })
+        }),
+        new CopyWebpackPlugin([
+            {
+                from: './src/assets/images',
+                to: './assets/images'
+            }
+        ])
     ]
 };

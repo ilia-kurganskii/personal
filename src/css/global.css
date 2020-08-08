@@ -39,7 +39,8 @@ html {
   --faint-strong-down: #a5adbb;
   --faint-weak-up: #eceef5;
 
-  --max-width: 80rem;
+  --max-width-section: 80rem;
+  --padding-horizontal: 1rem;
 }
 
 .back {
@@ -62,9 +63,4 @@ html {
 
   /* Сдвиги */
   --accent-strong-down: linear-gradient(132deg, #448ff3, #594cff);
-}
-
-.section {
-  width: 100%;
-  max-width: var(--max-width);
 }

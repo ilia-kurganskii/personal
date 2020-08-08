@@ -1,0 +1,24 @@
+.button {
+  background: transparent;
+  border: none;
+  border-radius: 0.6rem;
+  padding: 0.5em 0.5em;
+
+  cursor: pointer;
+
+  &.button--primary {
+    border: 0.2rem solid var(--accent-strong);
+    background: var(--accent-strong);
+    color: var(--base-weak);
+
+    &:hover {
+      background: transparent;
+      color: var(--accent-strong);
+    }
+  }
+
+  &.button--large {
+    font-size: 2rem;
+    padding: 0.5em 3em;
+  }
+}
