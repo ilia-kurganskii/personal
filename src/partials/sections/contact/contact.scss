@@ -1,0 +1,46 @@
+.section-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2em var(--padding-horizontal);
+
+  .contact-form {
+    max-width: var(--max-width-section);
+    width: 100%;
+
+    .fieldset {
+      padding: 1.5rem 0;
+      display: flex;
+      border: none;
+
+      &.fieldset--row {
+        flex-direction: row;
+      }
+
+      &.fieldset--column {
+        flex-direction: column;
+      }
+
+      .label {
+        font-size: 1.3em;
+        color: var(--faint-strong);
+        margin-bottom: 1em;
+        text-transform: uppercase;
+      }
+    }
+
+    .contact-name-email-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .contact-name,
+    .contact-email {
+      flex-basis: 47%;
+    }
+
+    .contact-text {
+      min-height: 5em;
+    }
+  }
+}

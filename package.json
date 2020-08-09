@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --config ./webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "NODE_ENV=production webpack --config ./webpack.config.js --mode=production",
-    "format": "prettier --write ./src/**/*.hbs --parser glimmer",
+    "format": "prettier --write ./src/**/*.{ts,hbs,scss,css}",
     "deploy": "gh-pages -d dist"
   },
   "author": "",
@@ -30,6 +30,8 @@
     "prettier": "^2.0.5",
     "sass-loader": "^9.0.3",
     "style-loader": "^1.2.1",
+    "ts-loader": "^8.0.2",
+    "typescript": "^3.9.7",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"

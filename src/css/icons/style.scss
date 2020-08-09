@@ -1,10 +1,11 @@
 @import "variables";
 
 @font-face {
-  font-family: '#{$icomoon-font-family}';
-  src:
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?f1i7fz') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?f1i7fz') format('woff');
+  font-family: "#{$icomoon-font-family}";
+  src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?f1i7fz")
+      format("truetype"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.woff?f1i7fz")
+      format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -12,7 +13,7 @@
 
 .icon {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: '#{$icomoon-font-family}' !important;
+  font-family: "#{$icomoon-font-family}" !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -50,4 +51,3 @@
     content: $icon-facebook;
   }
 }
-
