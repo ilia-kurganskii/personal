@@ -1,18 +1,16 @@
 .section-main {
-  padding: 0 var(--padding-horizontal);
-  background-color: var(--faint-weak);
   display: flex;
   flex-direction: row;
   justify-content: center;
 
-  .content {
+  .section-content {
     display: flex;
     flex-direction: row;
     min-height: 45rem;
     flex-wrap: wrap;
     width: 100%;
     max-width: var(--max-width-section);
-    padding: 2rem 0;
+    padding: 2rem var(--padding-horizontal);
 
     .content-text {
       padding: 2rem 0;

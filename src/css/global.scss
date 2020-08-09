@@ -14,57 +14,6 @@ html {
   width: 1px;
 }
 
-:root {
-  --base-strong: #000;
-  --base-weak: #fff;
-
-  --faint-strong: #8994a6;
-  --faint-weak: #f6f8fb;
-
-  --accent-strong: #0070ff;
-  --accent-weak: #ebf4ff;
-
-  --complement-strong: #8889e2;
-  --complement-weak: #eeecfd;
-
-  --critic-strong: #f74545;
-  --critic-weak: #fdeded;
-
-  --warning-strong: #f8ae4f;
-  --warning-weak: #fcebcf;
-
-  --success-strong: #27ae60;
-  --success-weak: #def8e9;
-
-  --faint-strong-down: #a5adbb;
-  --faint-weak-up: #eceef5;
-
-  --max-width-section: 80rem;
-  --padding-horizontal: 1rem;
-}
-
-.back {
-  --faint-weak: rgba(255, 255, 255, 0.15);
-}
-
-.text {
-  --faint-weak: rgba(237, 241, 247, 0.5);
-}
-
-.line {
-  --faint-strong: #edeff2;
-}
-
-.icon {
-}
-
-.fancy {
-  --accent-strong: linear-gradient(132deg, #3f89ee, #5447ff);
-
-  /* Сдвиги */
-  --accent-strong-down: linear-gradient(132deg, #448ff3, #594cff);
-}
-
 .logo {
   display: flex;
   align-items: center;

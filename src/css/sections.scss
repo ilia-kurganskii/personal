@@ -1,0 +1,19 @@
+.section:nth-child(odd) {
+  background-color: var(--base-weak);
+}
+
+.section:nth-child(even) {
+  background-color: var(--faint-weak);
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.section-content {
+  max-width: var(--max-width-section);
+  width: 100%;
+  padding: 0 var(--padding-horizontal);
+}
