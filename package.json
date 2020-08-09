@@ -9,7 +9,7 @@
     "build": "NODE_ENV=production webpack --config ./webpack.config.js --mode=production",
     "lint:write": "eslint --debug src/ --fix",
     "lint": "eslint . --ext .ts",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
