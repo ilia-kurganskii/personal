@@ -23,7 +23,13 @@ module.exports = {
   },
   module: {
     rules: [
-      { test: /\.hbs$/, loader: "handlebars-loader" },
+      {
+        test: /\.hbs$/,
+        loader: "handlebars-loader",
+        options: {
+          inlineRequires: "/assets/",
+        },
+      },
       {
         test: /\.(sa|sc|c)ss$/,
         use: [
@@ -45,7 +51,16 @@ module.exports = {
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: ["file-loader"],
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: isDevelopment ? "[name].[ext]" : "[name].[hash].[ext]",
+              outputPath: "static/",
+              useRelativePath: true,
+            },
+          },
+        ],
       },
       {
         test: /\.(jpg|png|gif|svg)$/,
@@ -53,8 +68,9 @@ module.exports = {
           {
             loader: "file-loader",
             options: {
-              name: "[name].[ext]",
+              name: isDevelopment ? "[name].[ext]" : "[name].[hash].[ext]",
               outputPath: "static/",
+              esModule: false,
               useRelativePath: true,
             },
           },
@@ -113,10 +129,6 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        {
-          from: path.resolve(__dirname, "src", "assets", "images"),
-          to: path.resolve(__dirname, "dist", "assets", "images"),
-        },
         {
           from: path.resolve(__dirname, "CNAME"),
           to: path.resolve(__dirname, "dist"),
