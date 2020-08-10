@@ -1,3 +1,40 @@
-.section-about {
-  display: flex;
+.section-career {
+  .section-content {
+    display: flex;
+    flex-direction: column;
+
+    .career-item {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 1em;
+
+      .career-company {
+        flex-grow: 1;
+        margin: 0;
+        font-size: 1.4em;
+      }
+
+      .career-description {
+        flex-basis: 60%;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        .career-position-name {
+          margin: 0;
+          font-size: 1.4em;
+        }
+
+        .career-position-period {
+          margin: 0.8em 0;
+          font-size: 1.2em;
+        }
+
+        .career-position-description {
+          margin: 0;
+          font-size: 1.4em;
+        }
+      }
+    }
+  }
 }

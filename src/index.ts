@@ -7,11 +7,12 @@ import "./css/normalize.css";
 import "./css/typography.css";
 import "./css/variables.scss";
 import "./css/sections.scss";
-import "./partials/footer/footer.scss";
-import "./partials/sections/contact/contact";
-import "./partials/sections/contact/contact";
-
-import "./partials/sections/contact/contact.scss";
-import "./partials/sections/main/main.scss";
 
 import "./partials/header/header.ts";
+import "./partials/footer/footer.scss";
+
+import "./partials/sections/contact/contact";
+import "./partials/sections/contact/contact.scss";
+
+import "./partials/sections/main/main.scss";
+import "./partials/sections/career/career.scss";
