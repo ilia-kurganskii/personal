@@ -6,7 +6,7 @@ i18n.configure({
 });
 
 module.exports = function (key, options) {
-  const locale = options.data.root.compilation.name;
+  const locale = options.data.root.locale;
   i18n.setLocale(locale);
   return i18n.__(key);
 };

@@ -5,18 +5,15 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-const I18nPlugin = require("i18n-webpack-plugin");
 
 const isDevelopment = process.env.NODE_ENV !== "production";
 
-module.exports = [undefined, "ru"].map((locale) => {
-  return {
-    name: locale || "en",
+module.exports = {
     entry: {
       bundle: "./src/index.ts"
     },
     output: {
-      path: path.resolve(__dirname, "dist", locale || ""),
+      path: path.resolve(__dirname, "dist"),
       filename: isDevelopment ? "bundle.js" : "bundle.[hash].js"
     },
     devtool: isDevelopment && "source-map",
@@ -124,7 +121,24 @@ module.exports = [undefined, "ru"].map((locale) => {
       new HtmlWebpackPlugin({
         title: "Ilya Kurganskii",
         template: "./src/index.hbs",
-        filename: isDevelopment ? "index.html" : locale ? `index.${locale}.html` : "index.html",
+        filename: "index.html",
+        templateParameters: {
+          'locale': 'en'
+        },
+        minify: !isDevelopment && {
+          html5: true,
+          collapseWhitespace: true,
+          caseSensitive: true,
+          removeComments: true
+        }
+      }),
+      new HtmlWebpackPlugin({
+        title: "Ilya Kurganskii",
+        template: "./src/index.hbs",
+        filename: `index.ru.html`,
+        templateParameters: {
+          'locale': 'ru'
+        },
         minify: !isDevelopment && {
           html5: true,
           collapseWhitespace: true,
@@ -141,5 +155,4 @@ module.exports = [undefined, "ru"].map((locale) => {
         ]
       })
     ]
-  };
-});
+  }
