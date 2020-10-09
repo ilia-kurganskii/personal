@@ -1,11 +1,3 @@
-.section:nth-child(odd) {
-  background-color: var(--base-weak);
-}
-
-.section:nth-child(even) {
-  background-color: var(--faint-weak);
-}
-
 .section {
   display: flex;
   flex-direction: row;

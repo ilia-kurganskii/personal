@@ -5,13 +5,22 @@ html {
 
 @font-face {
   font-family: "Primary";
-  src: url("../assets/fonts/Comfortaa-VariableFont_wght.ttf");
+  font-weight: normal;
+  src: url("../assets/fonts/Blinker-Regular.ttf");
 }
 
-.text.regular {
-  font-variation-settings: "wdth" 500, "wght" 400;
+@font-face {
+  font-family: "Primary";
+  font-weight: bold;
+  src: url("../assets/fonts/Blinker-Bold.ttf");
 }
 
-.text.bold {
-  font-variation-settings: "wdth" 400, "wght" 600;
+.text--regular {
+  font-family: "Primary", serif;
+  font-weight: normal;
+}
+
+.text--bold {
+  font-family: "Primary", serif;
+  font-weight: bold;
 }

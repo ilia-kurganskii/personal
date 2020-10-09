@@ -1,15 +1,15 @@
 :root {
-  --base-strong: #000;
-  --base-weak: #fff;
+  --base-strong: #2C3647;
+  --base-weak: #F8F8F2;
 
   --faint-strong: #8994a6;
   --faint-weak: #f6f8fb;
 
-  --accent-strong: #0070ff;
-  --accent-weak: #ebf4ff;
+  --accent-strong: #2EC3CD;
+  --accent-weak: #DBF4F5;
 
-  --complement-strong: #8889e2;
-  --complement-weak: #eeecfd;
+  --complement-strong: #B83E9F;
+  --complement-weak: #B83E9F;
 
   --critic-strong: #f74545;
   --critic-weak: #fdeded;
@@ -23,11 +23,12 @@
   --faint-strong-down: #a5adbb;
   --faint-weak-up: #eceef5;
 
-  --max-width-section: 80rem;
+  --max-width-section: 144rem;
   --padding-horizontal: 1rem;
 }
 
 .back {
+  --base-strong: #000;
   --faint-weak: rgba(255, 255, 255, 0.15);
 }
 

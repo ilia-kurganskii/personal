@@ -6,44 +6,103 @@
   .section-content {
     display: flex;
     flex-direction: row;
-    min-height: 45rem;
     flex-wrap: wrap;
     width: 100%;
     max-width: var(--max-width-section);
-    padding: 2rem var(--padding-horizontal);
+    padding: 9rem var(--padding-horizontal) 1rem;
+    justify-content: center;
 
     .content-text {
-      padding: 2rem 0;
+      flex-basis: 43%;
+      padding: 6rem 2.5rem 2rem;
       align-self: center;
-      max-width: 50%;
       min-width: 30rem;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
 
-      h3 {
-        font-size: 2em;
+      .position {
+        font-size: 1.4rem;
+        color: var(--complement-strong)
+      };
+
+      .name {
+        color: var(--base-weak);
+        line-height: 1.2em;
       }
 
-      p {
-        font-size: 1.5em;
+      .description {
+        color: var(--base-weak);
+        font-size: 1.2em;
       }
 
       button {
+        font-size: 1.4em;
         margin-top: 2rem;
       }
     }
 
     .content-image {
-      flex-grow: 1;
-      flex-basis: 50%;
+      margin: 0 2.5rem;
+      flex-basis: 30%;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
 
-      .image {
-        width: 100%;
-        object-fit: contain;
+      .circles {
+        position: relative;
+        width: 47rem;
+        height: 47rem;
+        min-width: 47rem;
+
+        .circle {
+          box-sizing: border-box;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+
+          &::before {
+            display: block;
+            content: "";
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            border: solid 1px var(--complement-strong);
+          }
+
+          &:after {
+            content: "";
+            display: block;
+            padding-bottom: 100%;
+          }
+
+          &:nth-child(1) {
+            opacity: 0.3;
+          }
+
+          &:nth-child(2) {
+            padding: 1.6rem 3rem 3rem 1.6rem;
+            opacity: 0.4;
+          }
+
+          &:nth-child(3) {
+            padding: 3.3rem 6.3rem 6.3rem 3.3rem;
+            opacity: 0.6;
+          }
+
+          &:nth-child(4) {
+            padding: 4.1rem 8.7rem 9.7rem 5.1rem;
+            opacity: 0.7;
+          }
+        }
+
+        .image {
+          margin-top: 5.2rem;
+          margin-left: 6.3rem;
+          width: 30rem;
+          height: 30rem;
+          object-fit: contain;
+          background-color: white;
+          border-radius: 50%;
+        }
       }
     }
   }

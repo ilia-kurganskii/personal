@@ -1,9 +1,6 @@
 .header-wrapper {
   display: flex;
-  background-color: var(--base-weak);
   justify-content: center;
-  position: sticky;
-  top: 0;
 
   &::after {
     content: "";
@@ -24,8 +21,8 @@
 }
 
 .header {
-  padding: 0 var(--padding-horizontal);
-  max-width: 80rem;
+  padding: 0 8rem;
+  max-width: var(--max-width-section);
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -34,21 +31,23 @@
   transition: box-shadow 200ms ease-in-out;
 
   .header-navigation {
+    flex: 1;
     display: flex;
     flex-direction: row;
     list-style: none;
+    justify-content: space-around;
 
     .navigation-item {
       position: relative;
       margin-left: 2rem;
 
       a {
-        color: var(--base-strong);
+        color: var(--base-weak);
         font-size: 1.4em;
         text-decoration: none;
 
         &:after {
-          background: var(--accent-strong);
+          background: var(--complement-strong);
           bottom: -0.1em;
           left: 0;
           content: "";

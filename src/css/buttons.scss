@@ -1,14 +1,14 @@
 .button {
   background: transparent;
   border: none;
-  border-radius: 0.6rem;
-  padding: 0.5em 0.5em;
+  border-radius: 1.3em;
+  padding: 0.5em 2em;
 
   cursor: pointer;
 
   &.button--primary {
     border: 0.2rem solid var(--accent-strong);
-    background: var(--accent-strong);
+    background: linear-gradient(96.96deg, var(--accent-strong) 9.72%, var(--accent-strong) 89.48%);
     color: var(--base-weak);
     transition: color 200ms ease-in-out, background 200ms ease-in-out;
 
@@ -20,6 +20,6 @@
 
   &.button--large {
     font-size: 2rem;
-    padding: 0.5em 3em;
+    padding: 0.7em 2.6em;
   }
 }

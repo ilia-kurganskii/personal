@@ -1,3 +1,6 @@
 {
-  "locale": "ru"
+	"locale": "ru",
+	"hd_about": "Обо мне",
+	"hd_experience": "hd_experience",
+	"about_description": "about_description"
 }

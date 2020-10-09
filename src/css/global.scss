@@ -2,6 +2,12 @@ html {
   scroll-behavior: smooth;
 }
 
+h3 {
+  margin: 0;
+  font-size: 4em;
+}
+
+
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -15,14 +21,25 @@ html {
 }
 
 .logo {
+  position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   &:before {
     content: "IK";
-    font-size: 2.5rem;
-    border: 1px solid var(--accent-strong);
-    padding: 0.2em;
-    border-radius: 0 0.2em 0.2em 0;
-    color: var(--accent-strong);
+    font-family: "Primary", serif;
+    font-weight: bold;
+    font-size: 4rem;
+    color: var(--base-weak);
+  }
+  &:after {
+    position: absolute;
+    left: 0;
+    bottom: -1.2rem;
+    content:'dev';
+    font-family: "Primary", serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--base-weak);
   }
 }

@@ -1,3 +1,6 @@
 {
-  "locale": "en"
+	"locale": "en",
+	"hd_about": "About me",
+	"hd_experience": "Experience",
+	"about_description": "First and foremost, I love writing code. I fall in love ever since writing my first program in Pascal. For me, software engineering is art, code is brushes and paints. \n\nEven when I leave the office, I tend to continue writing code or learning new technologies. I love to create useful apps for people. Also I like automate routine work so I like DevOps."
 }
