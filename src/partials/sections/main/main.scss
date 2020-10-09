@@ -68,12 +68,6 @@
             border: solid 1px var(--complement-strong);
           }
 
-          &:after {
-            content: "";
-            display: block;
-            padding-bottom: 100%;
-          }
-
           &:nth-child(1) {
             opacity: 0.3;
           }
