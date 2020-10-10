@@ -1,38 +1,86 @@
 .section-career {
   .section-content {
     display: flex;
+    max-width: 80rem;
     flex-direction: column;
+
+    .section-header {
+      font-size: 4em;
+      color: var(--base-weak);
+    }
 
     .career-item {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       margin-bottom: 1em;
 
       .career-company {
         flex-grow: 1;
-        margin: 0;
         font-size: 1.4em;
+        margin: 0 0 2rem;
+        color: var(--base-weak)
+      }
+
+      .career-company-description {
+        display: flex;
+        flex-direction: column;
       }
 
       .career-description {
         flex-basis: 60%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-grow: 1;
 
-        .career-position-name {
-          margin: 0;
-          font-size: 1.4em;
-        }
-
-        .career-position-period {
-          margin: 0.8em 0;
+        .career-period {
+          display: block;
           font-size: 1.2em;
+          min-width: 10rem;
+          text-align: right;
+          color: var(--complement-strong)
         }
 
-        .career-position-description {
-          margin: 0;
-          font-size: 1.4em;
+        .timeline {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-left: 2.2rem;
+          margin-right: 4.2rem;
+          margin-top: 0.5em;
+
+          &:before {
+            content: "";
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background-color: var(--base-weak);
+            margin-bottom: 8px;
+          }
+
+          &:after {
+            content: "";
+            width: 1px;
+            background-color: var(--base-weak);
+            position: relative;
+            flex: 1;
+          }
+        }
+
+        .career-position {
+          .career-position-name {
+            margin: 0 0 0.8rem;
+            font-size: 1.4em;
+            color: var(--base-weak)
+          }
+
+
+          .career-position-description {
+            margin: 0 0 2.4rem;
+            line-height: 1.2;
+            max-width: 50rem;
+            font-size: 1.4em;
+            color: var(--base-weak);
+          }
         }
       }
     }

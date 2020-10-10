@@ -1,24 +1,51 @@
-<section id="about" class="section section-career">
-    <div class="section-content">
-        <h2>
-            Work Experience
-        </h2>
-        <div>
-            {{#> career-company company="Mercury Development"}}
-                {{#> career-position position="Angular Developer" start="2018" end="Present"}}
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Pharetra sit amet aliquam id diam. Congue eu consequat ac felis donec. Id eu
-                    nisl nunc mi ipsum. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus. Pretium aenean
-                    pharetra magna ac placerat vestibulum. Et malesuada fames ac turpis egestas sed tempus urna et.
-                    Integer eget aliquet nibh praesent tristique magna sit. Egestas egestas fringilla phasellus faucibus
-                    scelerisque eleifend donec. Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. Ac
-                    turpis egestas sed tempus urna. Purus in mollis nunc sed id semper risus in hendrerit. Volutpat est
-                    velit egestas dui. In eu mi bibendum neque egestas congue quisque egestas. Vel pharetra vel turpis
-                    nunc eget lorem dolor sed viverra. Et leo duis ut diam quam nulla porttitor. Maecenas volutpat
-                    blandit aliquam etiam erat velit scelerisque in.
+<section id="career" class="section section-career">
+  <div class="section-content">
+    <h2 class="text text--semibold section-header">
+      Experience
+    </h2>
+    <div>
+      {{#> career-company company="Mercury Development"}}
+        {{#> career-position position="Frontend Developer" start="May’ 20" end="now"}}
+          Develop a frontend single page application.
+          <br>
+          Technologies used: Angular 8, RxJS, Redux
+        {{/career-position}}
 
-                {{/career-position}}
-            {{/career-company}}
-        </div>
+        {{#> career-position position="Frontend Developer" start="Nov’ 19" end="May’ 20"}}
+          Built a reusable architecture. Setup CI/CD for automated deploy app to 3 env. Mentored junior developers.
+          <br>
+          Technologies used: React (mobx), CSS modules, Docker, Gitlab Review App, Storybook
+        {{/career-position}}
+
+        {{#> career-position position="Frontend Developer" start="Feb’ 19" end="Nov’ 19"}}
+          Built a reusable architecture. Setup CI/CD for automated build app for internal testing and stores. Mentored
+          junior developers. Published application to Google Play and Apple Store. Embedded third-party libraries. Setup
+          CI/CD and AWS Infrastructure for PHP backend.
+          <br>
+          Technologies used: React Native (ios, android), MobX, AWS (RDS, ECS, RDS, SNS)
+        {{/career-position}}
+
+        {{#> career-position position="Full Stack Engineer" start="Oct’18" end="Feb’19"}}
+          Support frontend app and backend service.<br>
+          Technologies used: React (mobx), ReactNative (ios, android), NodeJS (koa, sequelize, postgres), AWS (RDS, EC2,
+          SNS)
+        {{/career-position}}
+
+        {{#> career-position position="Frontend Developer" start="Aug’18" end="Oct’ 18"}}
+          Built a mobile application. Setup CI/CD for automated build app for internal testing and stores. Built a
+          simple backend service for work with third-party API.
+          <br>
+          Technologies used: React Native (ios), MobX, Firebase
+        {{/career-position}}
+
+        {{#> career-position position="Full Stack Engineer" start="Apr’ 18" end="Aug’ 18"}}
+          Helped to built mobile app, web app and backend service. Setup CI/CD to build mobile applications.
+          <br>
+          Technologies used: React (CRA, mobx), ReactNative (ios, android), NodeJS (koa, sequelize, postgres), AWS (RDS,
+          EC2, SNS)
+        {{/career-position}}
+
+      {{/career-company}}
     </div>
+  </div>
 </section>

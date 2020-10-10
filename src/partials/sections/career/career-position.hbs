@@ -1,11 +1,15 @@
-<div class="career-position">
-<p class="career-position-name">
-    {{position}}
-</p>
-<p class="career-position-period">
-    {{start}} - {{end}}
-</p>
-<p class="career-position-description">
-    {{> @partial-block}}
-</p>
+<div class="career-description">
+<span class="text text--semibold career-period">
+  {{start}} - {{end}}
+</span>
+  <div class="timeline"></div>
+  <div class="career-position">
+    <p class="text text--semibold career-position-name">
+      {{position}}
+    </p>
+
+    <p class="text text--regular career-position-description">
+      {{> @partial-block}}
+    </p>
+  </div>
 </div>
