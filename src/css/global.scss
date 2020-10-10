@@ -28,18 +28,18 @@ h3 {
   &:before {
     content: "IK";
     font-family: "Primary", serif;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 4rem;
     color: var(--base-weak);
   }
   &:after {
     position: absolute;
     left: 0;
-    bottom: -1.2rem;
+    bottom: -1.5rem;
     content:'dev';
     font-family: "Primary", serif;
-    font-weight: bold;
-    font-size: 2rem;
+    font-weight: 600;
+    font-size: 2.1rem;
     color: var(--base-weak);
   }
 }

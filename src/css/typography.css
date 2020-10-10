@@ -3,10 +3,21 @@ html {
   font-size: 10px;
 }
 
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 @font-face {
   font-family: "Primary";
   font-weight: normal;
   src: url("../assets/fonts/Blinker-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Primary";
+  font-weight: 600;
+  src: url("../assets/fonts/Blinker-SemiBold.ttf");
 }
 
 @font-face {
@@ -19,6 +30,12 @@ html {
   font-family: "Primary", serif;
   font-weight: normal;
 }
+
+.text--semibold {
+  font-family: "Primary", serif;
+  font-weight: 600;
+}
+
 
 .text--bold {
   font-family: "Primary", serif;
