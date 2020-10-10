@@ -34,12 +34,15 @@
       .description {
         color: var(--base-weak);
         margin-top: 4.7rem;
+        max-width: 44rem;
+        line-height: 130%;
         font-size: 1.2em;
       }
 
-      button {
+      .button {
         font-size: 1.4em;
         margin-top: 2rem;
+        text-decoration: none;
       }
     }
 
