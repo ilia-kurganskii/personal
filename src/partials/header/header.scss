@@ -3,6 +3,10 @@
   justify-content: center;
 
   .social {
+    @media (max-width: 1024px) {
+      display: none;
+    }
+
     position: fixed;
     top: 0;
     right: 8.2rem;
@@ -53,7 +57,8 @@
 }
 
 .header {
-  padding: 1.3rem 8.3rem;
+  height: var(--header-height);
+  padding: 1.3rem 4rem;
   max-width: var(--max-width-section);
   width: 100%;
   display: flex;

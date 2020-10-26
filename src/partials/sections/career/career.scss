@@ -2,6 +2,7 @@
   .section-content {
     display: flex;
     max-width: 80rem;
+    margin: 0 3.6rem;
     flex-direction: column;
 
     .section-header {
@@ -18,7 +19,7 @@
         flex-grow: 1;
         font-size: 1.4em;
         margin: 0 0 2rem;
-        color: var(--base-weak)
+        color: var(--base-weak);
       }
 
       .career-company-description {
@@ -33,11 +34,18 @@
         flex-grow: 1;
 
         .career-period {
-          display: block;
+          display: flex;
+          justify-content: flex-end;
           font-size: 1.2em;
           min-width: 10rem;
           text-align: right;
-          color: var(--complement-strong)
+          color: var(--complement-strong);
+
+          @media (max-width: 375px) {
+            justify-content: flex-start;
+            flex-direction: column;
+            min-width: 4.5rem;
+          }
         }
 
         .timeline {
@@ -70,9 +78,8 @@
           .career-position-name {
             margin: 0 0 0.8rem;
             font-size: 1.4em;
-            color: var(--base-weak)
+            color: var(--base-weak);
           }
-
 
           .career-position-description {
             margin: 0 0 2.4rem;

@@ -1,15 +1,15 @@
 :root {
-  --base-strong: #2C3647;
-  --base-weak: #F8F8F2;
+  --base-strong: #2c3647;
+  --base-weak: #f8f8f2;
 
   --faint-strong: #8994a6;
   --faint-weak: #f6f8fb;
 
-  --accent-strong: #2EC3CD;
-  --accent-weak: #DBF4F5;
+  --accent-strong: #2ec3cd;
+  --accent-weak: #dbf4f5;
 
-  --complement-strong: #B83E9F;
-  --complement-weak: #B83E9F;
+  --complement-strong: #b83e9f;
+  --complement-weak: #b83e9f;
 
   --critic-strong: #f74545;
   --critic-weak: #fdeded;
@@ -25,6 +25,8 @@
 
   --max-width-section: 144rem;
   --padding-horizontal: 1rem;
+
+  --header-height: 6rem;
 }
 
 .back {

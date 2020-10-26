@@ -7,7 +7,6 @@ h3 {
   font-size: 4em;
 }
 
-
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -21,6 +20,7 @@ h3 {
 }
 
 .logo {
+  margin: 0;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -33,10 +33,8 @@ h3 {
     color: var(--base-weak);
   }
   &:after {
-    position: absolute;
-    left: 0;
-    bottom: -1.5rem;
-    content:'dev';
+    margin-top: -1.1rem;
+    content: "dev";
     font-family: "Primary", serif;
     font-weight: 600;
     font-size: 2.1rem;
