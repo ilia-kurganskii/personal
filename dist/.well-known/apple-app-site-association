@@ -2,9 +2,31 @@
    "applinks": {
       "details": [
          {
-            "appID": "HT487SCZ82.com.bitvavo",
-            "paths": ["/f/open-in-app/*"]
+            "appIDs": [
+               "HT487SCZ82.com.bitvavo"
+            ],
+            "components": [
+               {
+                  "#": "no_universal_links",
+                  "exclude": true
+               },
+               {
+                  "/": "/*/markets"
+               },
+               {
+                  "/": "/*/markets/*"
+               },
+            ]
+         },
+         {
+             "appID": "HT487SCZ82.com.bitvavo",
+             "paths": ["/f/open-in-app/*"]
          }
+      ]
+   },
+   "webcredentials": {
+      "apps": [
+         "HT487SCZ82.com.bitvavo"
       ]
    }
 }
